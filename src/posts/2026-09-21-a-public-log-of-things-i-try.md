@@ -17,6 +17,4 @@ This site is the fix. One page per thing, written when I start it, and edited in
 
 The point is not to look good. Most experiments fail, and the failed ones teach more than the ones that work. Writing them down forces me to say what I actually tried, what happened, and what I would do differently.
 
-How it is built, since that is the first thing I tried here: the pages are Markdown in a public GitHub repository, turned into plain HTML by Eleventy and served by GitHub Pages. Comments run on GitHub Discussions through giscus. No server, no database, no monthly bill.
-
 If you have tried something similar, or want to tell me why an idea will not work, the comments are open.
