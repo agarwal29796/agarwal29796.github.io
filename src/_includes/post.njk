@@ -1,0 +1,49 @@
+---
+layout: base.njk
+---
+<article class="post h-entry">
+  <header class="post-header">
+    <p class="meta">
+      <time class="dt-published" datetime="{{ page.date | isoDate }}">{{ page.date | readableDate }}</time>
+      {%- if updated %} · updated <time class="dt-updated" datetime="{{ updated | isoDate }}">{{ updated | readableDate }}</time>{% endif %}
+      {%- if status %} · <span class="status status-{{ status }}">{{ status }}</span>{% endif %}
+    </p>
+    <h1 class="p-name">{{ title }}</h1>
+    {%- if description %}
+    <p class="lede p-summary">{{ description }}</p>
+    {%- endif %}
+    {%- if link %}
+    <p class="ext"><a href="{{ link }}" rel="noopener">{{ linkText or link }}</a></p>
+    {%- endif %}
+  </header>
+  <div class="post-body e-content">
+    {{ content | safe }}
+  </div>
+  <footer class="post-footer">
+    {%- set shown = [] -%}
+    {%- for t in tags %}{% if t != "posts" %}{% set _ = shown.push(t) %}{% endif %}{% endfor -%}
+    {%- if shown.length %}
+    <p class="tags">{% for t in shown %}<span class="tag">#{{ t }}</span> {% endfor %}</p>
+    {%- endif %}
+    <p><a href="/">← All the things</a></p>
+  </footer>
+  <section class="comments" id="comments">
+    <h2>Comments</h2>
+    <script src="https://giscus.app/client.js"
+      data-repo="{{ site.giscus.repo }}"
+      data-repo-id="{{ site.giscus.repoId }}"
+      data-category="{{ site.giscus.category }}"
+      data-category-id="{{ site.giscus.categoryId }}"
+      data-mapping="pathname"
+      data-strict="0"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="top"
+      data-theme="preferred_color_scheme"
+      data-lang="en"
+      data-loading="lazy"
+      crossorigin="anonymous"
+      async></script>
+    <noscript><p>Comments need JavaScript. You can also <a href="https://github.com/{{ site.giscus.repo }}/discussions">comment on GitHub</a>.</p></noscript>
+  </section>
+</article>

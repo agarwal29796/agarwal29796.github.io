@@ -1,0 +1,21 @@
+{
+  "name": "Archit Kumar",
+  "tagline": "A public log of things I try: ideas, tech projects, startups.",
+  "description": "Archit Kumar's public log of things tried: ideas, tech projects and startups, with what happened to each one.",
+  "url": "https://agarwal29796.github.io",
+  "lang": "en",
+  "author": {
+    "name": "Archit Kumar",
+    "role": "AI and computer vision engineer",
+    "github": "https://github.com/agarwal29796",
+    "linkedin": ""
+  },
+  "image": "/img/og-default.png",
+  "avatar": "/img/archit.png",
+  "giscus": {
+    "repo": "agarwal29796/agarwal29796.github.io",
+    "repoId": "R_kgDOHwCrpQ",
+    "category": "Announcements",
+    "categoryId": "DIC_kwDOHwCrpc4DGED3"
+  }
+}

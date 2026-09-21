@@ -1,0 +1,28 @@
+---
+layout: base.njk
+permalink: /
+---
+<section class="hero h-card">
+  <img class="avatar u-photo" src="{{ site.avatar }}" alt="Archit Kumar" width="88" height="88">
+  <div>
+    <h1>Hi, I'm <span class="p-name">Archit</span>.</h1>
+    <p class="lede">I build things with computer vision and AI, and I try a lot of ideas: side projects, small startups, tools for friends. This is the log. One page per thing, with a status I update as it goes.</p>
+    <p class="hero-links"><a href="/about/">About me</a> · <a href="{{ site.author.github }}" rel="me">GitHub</a> · <a href="/feed.xml">Feed</a></p>
+  </div>
+</section>
+
+<section class="log">
+  <h2>The log</h2>
+  <p class="legend"><span class="status status-trying">trying</span> in progress · <span class="status status-shipped">shipped</span> live · <span class="status status-paused">paused</span> on hold · <span class="status status-dropped">dropped</span> stopped · <span class="status status-idea">idea</span> not started</p>
+  <ol class="post-list" reversed>
+  {%- for post in collections.posts %}
+    <li>
+      <p class="meta"><time datetime="{{ post.date | isoDate }}">{{ post.date | readableDate }}</time>{% if post.data.status %} · <span class="status status-{{ post.data.status }}">{{ post.data.status }}</span>{% endif %}</p>
+      <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+      {%- if post.data.description %}
+      <p>{{ post.data.description }}</p>
+      {%- endif %}
+    </li>
+  {%- endfor %}
+  </ol>
+</section>
