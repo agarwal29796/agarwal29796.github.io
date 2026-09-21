@@ -28,6 +28,10 @@ export default function (eleventyConfig) {
     return `${x.getUTCDate()} ${MONTHS[x.getUTCMonth()]} ${x.getUTCFullYear()}`;
   });
   eleventyConfig.addFilter("limit", (arr, n) => arr.slice(0, n));
+  // Sitemap entries: real pages only (directory URLs), never feeds, robots or pages marked sitemap: false.
+  eleventyConfig.addFilter("sitemapPages", (all) =>
+    all.filter((p) => p.url && p.url.endsWith("/") && p.data.sitemap !== false)
+  );
 
   eleventyConfig.addPlugin(feedPlugin, {
     type: "atom",
