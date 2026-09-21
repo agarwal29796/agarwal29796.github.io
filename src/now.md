@@ -12,5 +12,4 @@ _Updated 2026-09-21. This is a [now page](https://nownownow.com/about)._
 - Day job: computer vision and AR at Mirelz AI.
 - Started this log. First goal: a page for every experiment of the last two years, honest status included.
 - Building [TeachBoard](https://teachboard.app), a whiteboard for recording teaching videos.
-- Deciding what to do with [ArBoost](https://arboost.tech): keep, pivot or archive.
 - Automating GST paperwork for a friend's accounting practice. Still an experiment.

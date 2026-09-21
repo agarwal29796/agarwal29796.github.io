@@ -5,7 +5,7 @@ status: shipped
 tags: [meta]
 ---
 
-I try a lot of things. An AR product visualiser for furniture brands. A tool for teachers. Automation for a friend's accounting practice. Ideas that never left a notebook. Until now the only record was scattered across repos, decks and chat threads, and most of it lived only in my head.
+I try a lot of things. A tool for teachers. Automation for a friend's accounting practice. Ideas that never left a notebook. Until now the only record was scattered across repos, decks and chat threads, and most of it lived only in my head.
 
 This site is the fix. One page per thing, written when I start it, and edited in place as it goes. Every page carries a status:
 

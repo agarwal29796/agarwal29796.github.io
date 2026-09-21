@@ -9,9 +9,8 @@ updated: 2026-09-21
 
 I'm Archit Kumar, an AI and computer vision engineer in India. I work at Mirelz AI as a Senior AI / Computer Vision Research Engineer, on augmented reality and virtual try-on. Before that I did an M.Tech in Computer Science at IIIT Hyderabad (2020) and a B.Tech in Electronics and Communication Engineering (2018).
 
-Outside work I build small products and try ideas, usually with one friend and no funding. Two of them are live:
+Outside work I build small products and try ideas, usually with one friend and no funding. One of them is live:
 
-- [ArBoost](https://arboost.tech): a 3D and AR product visualiser for brands. A customer opens a link or scans a QR code and sees the product in their own room.
 - [TeachBoard](https://teachboard.app): a whiteboard for recording teaching videos on technical topics. Flow diagrams, tables, freehand drawing and charts, with a screen-recording-friendly UI.
 
 The rest, including the ones that failed, are in [the log](/).
